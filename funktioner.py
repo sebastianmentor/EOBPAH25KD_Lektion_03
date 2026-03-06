@@ -190,6 +190,7 @@ print(new_value)
 modify_global(9)
 print(new_value)
 
+print("-----------------------")
 def non_local_scope(value):
     new_value = 24
     def print_value():
@@ -199,4 +200,6 @@ def non_local_scope(value):
     return print_value
 
 f = non_local_scope("hejsan två")
+f()
+new_value = 10
 f()

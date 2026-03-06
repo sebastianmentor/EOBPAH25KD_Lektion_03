@@ -52,7 +52,10 @@ def get_all_ages(users:list[User]) -> list[int]:
 
 from typing import Optional, Union
 
-def return_maybe(val:int) -> int|None:
+def return_maybe(val:int) -> Optional[int]:
     if val < 100:
         return None
     return val//2
+
+def take_tuple(my_t:tuple[int,...]) -> int:
+    return sum(my_t)

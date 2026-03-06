@@ -30,6 +30,10 @@ from functools import reduce
 summera = reduce(lambda x,y: x+y, numbers)
 print(summera)
 
+# print([n**2 for n in numbers])
+# print([n for n in numbers if n%2==0])
+# print(sum(numbers))
+
 
 lista_med_namn = ["Kalle", "Erik", "Nisse", "Kurt"]
 # lista_med_namn[0].startswith
